@@ -92,6 +92,10 @@ async def update_lead(
 async def root():
     return {"message": "Awesome Leads Manager"}
 
+@app.get('/')
+def get_main():
+    return { 200: 'OK'}
+
 if __name__ == "__main__":
     import uvicorn
 
